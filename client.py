@@ -100,7 +100,7 @@ class TicTacToeClient:
 
 if __name__ == "__main__": #intialize client
     ip_addr = input("Enter ip address: ")
-    port = input("Enter port: ")
+    port = int(input("Enter port: "))
     HOST = ip_addr # public IP 4 addr of EC2 server instance
     PORT = port #random port
     client = TicTacToeClient(HOST, PORT)
