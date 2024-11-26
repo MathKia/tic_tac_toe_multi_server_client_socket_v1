@@ -150,6 +150,8 @@ class TicTacToeServer:
 
 
 if __name__ == "__main__": #intialize script
-    HOST = "0.0.0.0" #local host
-    PORT = 12345 #random port
+    ip_addr = input("Enter ip address: ")
+    port = input("Enter port: ")
+    HOST = ip_addr #host IP
+    PORT = port #random port
     client = TicTacToeServer(HOST, PORT)
